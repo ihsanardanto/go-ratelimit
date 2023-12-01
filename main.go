@@ -8,8 +8,8 @@ import (
 )
 
 type Client struct {
-	limiter  *rate.Limiter
-	lastSeen time.Time
+	Limiter  *rate.Limiter
+	LastSeen time.Time
 }
 
 type RateLimiter struct {
@@ -28,5 +28,5 @@ func NewRateLimiter(rateLimit, burstLimit int) *RateLimiter {
 }
 
 func (rl *RateLimiter) AllowRequest(ip string) bool {
-	return rl.Clients[ip].limiter.Allow()
+	return rl.Clients[ip].Limiter.Allow()
 }
