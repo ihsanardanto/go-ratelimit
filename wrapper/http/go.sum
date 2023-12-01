@@ -1,0 +1,6 @@
+github.com/ihsanardanto-djoin/go-ip-request v0.0.0-20231129053410-8a16213b1d6a h1:F+rUQ/9zwWAhvbgAXSo79eSanfSK8Aof0kzI+UzUS+Y=
+github.com/ihsanardanto-djoin/go-ip-request v0.0.0-20231129053410-8a16213b1d6a/go.mod h1:u1afbiCb0bfznvUYRXuB58Z4Jo+DuTN3JtoTeUA+njs=
+github.com/ihsanardanto/go-ratelimit v0.0.0-20231201193934-d64b7851dff3 h1:5r/zHUa0F6WNOZHuIFlU4wBnqFI01yOOhWS/KR+vuxY=
+github.com/ihsanardanto/go-ratelimit v0.0.0-20231201193934-d64b7851dff3/go.mod h1:VY51GkOMvfCY/P6/w1hZ1OTgVc470wyf/GSK5Ptr2ok=
+golang.org/x/time v0.5.0 h1:o7cqy6amK/52YcAKIPlM3a+Fpj35zvRj2TP+e1xFSfk=
+golang.org/x/time v0.5.0/go.mod h1:3BpzKBy/shNhVucY/MWOyx10tF3SFh9QdLuxbVysPQM=
