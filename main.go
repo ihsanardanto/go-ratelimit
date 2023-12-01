@@ -7,26 +7,26 @@ import (
 	"golang.org/x/time/rate"
 )
 
-type client struct {
+type Client struct {
 	limiter  *rate.Limiter
 	lastSeen time.Time
 }
 
 type RateLimiter struct {
-	limit   int
-	burst   int
-	mu      sync.Mutex
-	clients map[string]*client
+	Limit   int
+	Burst   int
+	Mu      sync.Mutex
+	Clients map[string]*Client
 }
 
 func NewRateLimiter(rateLimit, burstLimit int) *RateLimiter {
 	return &RateLimiter{
-		limit:   rateLimit,
-		burst:   burstLimit,
-		clients: make(map[string]*client),
+		Limit:   rateLimit,
+		Burst:   burstLimit,
+		Clients: make(map[string]*Client),
 	}
 }
 
 func (rl *RateLimiter) AllowRequest(ip string) bool {
-	return rl.clients[ip].limiter.Allow()
+	return rl.Clients[ip].limiter.Allow()
 }
